@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Product Sans';
+    src: local('Product Sans'), url('./fonts/product-sans/Product\ Sans\ Regular.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Product Sans', 'Roboto Slab';
+    letter-spacing: 1px;
+    a {
+        text-decoration: none;
+        cursor: pointer;
+    }
+}

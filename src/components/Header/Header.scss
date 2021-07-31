@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 20px 0px;
+    .header-options {
+        width: 30%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 50px;
+        a {
+            color: #133357;
+        }
+    }
+}

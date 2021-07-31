@@ -1,0 +1,15 @@
+.weather {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    .title {
+        background-color: #133357;
+        color: #fff;
+        padding: 15px 20px;
+    }
+    .cities {
+        display: flex;
+        flex-direction: row;
+    }
+}

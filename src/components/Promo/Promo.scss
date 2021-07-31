@@ -1,0 +1,19 @@
+.promo {
+    background-image: url('./../../assets/promo-image.png');
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 60px;
+    color: #fff;
+    h1 {
+        margin-bottom: 10px;
+        font-size: 40px;
+    }
+    p {
+        line-height: 1.5;
+        font-size: 28px;
+    }
+}
