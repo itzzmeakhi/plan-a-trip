@@ -6,9 +6,9 @@ const Header = () => {
     return (
         <div className="header">
             <div className="header-options">
-                <a href="#"> WEATHER </a>
-                <a href="#"> DESTINATIONS </a>
-                <a href="#"> GET A QUOTE </a>
+                <a href="#weather"> WEATHER </a>
+                <a href="#destinations"> DESTINATIONS </a>
+                <a href="#quote"> GET A QUOTE </a>
             </div>
         </div>
     );

@@ -1,13 +1,14 @@
 import React from 'react';
 
+import { PromoCq } from './../../utils/content';
+
 import './Promo.scss';
 
 const Promo = () => {
     return (
         <div className="promo">
-            <h1>PLAN A TRIP</h1>
-            <p>Make your vacation on the most</p>
-            <p>memorable one</p>
+            <h2>{PromoCq.header}</h2>
+            <p dangerouslySetInnerHTML={{ __html: PromoCq.caption }} />
         </div>
     );
 }

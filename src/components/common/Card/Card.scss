@@ -13,9 +13,16 @@
         margin-bottom: 5px;
     }
     .temp {
-        font-size: 40px;
+        font-size: 42px;
     }
     svg {
         height: 25px;
+    }
+}
+
+@media only screen and (max-width : 480px) {
+    .card {
+        min-width: 50%;
+        max-width: 25%;
     }
 }

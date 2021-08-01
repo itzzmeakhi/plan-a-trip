@@ -1,8 +1,17 @@
-export const remainingTime = (currentTime, endTime) => {
-    const currentMonth = currentTime.getTime();
-    const endMonth = endTime.getTime();
+export const remainingTime = () => {
+    const endTime = new Date('2021', '07', '08', '18', '00');
+    const currentTime = new Date();
+    const diff = +endTime - +currentTime;
 
-    const monthsRemaining = (endMonth - currentMonth) + 1;
+    let timeLeft = {};
 
-    console.log("=> monthsRe", monthsRemaining)
+    if (diff > 0) {
+        timeLeft = {
+            days: Math.floor(diff / (1000 * 60 * 60 * 24)),
+            hours: Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+            minutes: Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60)),
+            seconds: Math.floor((diff % (1000 * 60)) / 1000)
+      };
+    }
+    return timeLeft;
 }

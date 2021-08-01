@@ -1,0 +1,38 @@
+.quote {
+    margin-top: 80px;
+    h2 {
+        text-align: center;
+        margin-bottom: 40px;
+        color: #133357;
+        font-size: 30px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        * {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .quote {
+        margin-top: 20px;
+        h2 {
+            margin-bottom: 20px;
+            font-size: 16px;
+        }
+    }
+}
+
+@media only screen and (min-width : 321px) and (max-width : 480px) {
+    .quote {
+        margin-top: 20px;
+        h2 {
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+    }
+}

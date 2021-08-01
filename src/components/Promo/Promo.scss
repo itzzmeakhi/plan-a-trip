@@ -8,12 +8,48 @@
     justify-content: flex-end;
     padding: 60px;
     color: #fff;
-    h1 {
+    margin-top: 80px;
+    h2 {
         margin-bottom: 10px;
         font-size: 40px;
     }
     p {
-        line-height: 1.5;
+        line-height: 20px;
         font-size: 28px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .promo {
+        margin-top: 0px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding: 40px;
+        height: 180px;
+        h2 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        p {
+            line-height: 8px;
+            font-size: 16px;
+        }
+    }
+}
+
+@media only screen and (min-width : 321px) and (max-width : 480px) {
+    .promo {
+        margin-top: 10px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding: 40px;
+        height: 200px;
+        h2 {
+            font-size: 20px;
+        }
+        p {
+            line-height: 8px;
+            font-size: 16px;
+        }
     }
 }

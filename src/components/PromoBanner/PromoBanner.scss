@@ -4,6 +4,20 @@
     padding: 15px 0px;
     text-align: center;
     p {
+        &.bold {
+            font-weight: bold;
+        }
         margin-bottom: 5px;
+    }
+}
+
+@media only screen and (max-width : 480px) {
+    .promo-banner {
+        padding: 15px 20px;
+        p {
+            line-height: 20px;
+            font-size: 80%;
+            margin-bottom: 0px;
+        }
     }
 }

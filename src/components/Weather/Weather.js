@@ -12,7 +12,6 @@ const Weather = () => {
         try {
             const fetchCitiesData =  async () => {
                 const res = await (await axios.get('https://run.mocky.io/v3/e3ae9d2e-78f5-403d-b6cd-fa7f8c7e1576')).data;
-                console.log("=> res", res)
                 setCities([...res?.result]);
             }
             fetchCitiesData();
@@ -21,7 +20,7 @@ const Weather = () => {
         }
     }, []);
     return (
-        <div className="weather">
+        <div className="weather" id="weather">
             <div className="title">
                 <p> THE WEATHER CHANNEL </p>
             </div>

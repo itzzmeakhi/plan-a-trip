@@ -1,23 +1,27 @@
 import React, { useState, useEffect } from 'react';
 
+import { remainingTime } from './../../utils/helpers';
+import { PromoBannerCq } from './../../utils/content';
+
 import './PromoBanner.scss';
 
 const PromoBanner = () => {
-    const endTime = new Date('2021', '07', '08', '18', '00');
-    const [remainingTime, setRemainingTime] = useState(new Date(new Date() - endTime));
-    console.log("=> end", endTime)
-    console.log("=> now", new Date())
-    console.log("=> remaini", remainingTime)
+    const [endsIn, setEndsIn] = useState(remainingTime());
+    useEffect(() => {
+        const timer = setTimeout(() => {
+          setEndsIn(remainingTime());
+        }, 1000);
+        return () => clearTimeout(timer);
+    });
+    const { days, hours, minutes, seconds } = endsIn;
 
     return (
         <div className="promo-banner">
             <p> 
-                Book now to get exciting travel deals. Upto 40% off on credit card payments 
+                {PromoBannerCq.promo}
             </p>
-            <p> 
-                <b>
-                    Offer ends in 
-                </b>
+            <p className="bold"> 
+                {`${PromoBannerCq.endsIn} ${days}d ${hours}h ${minutes}m ${seconds}s`}
             </p>
         </div>
     );

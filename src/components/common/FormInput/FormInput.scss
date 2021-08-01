@@ -1,0 +1,38 @@
+.form-group {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    label {
+        color: #7f8c8d;
+    }
+    input {
+        padding: 10px;
+        outline: 0;
+        border: 1px solid #7f8c8d;
+        border-radius: 5px;
+    }
+    .error {
+        color: #e74c3c;
+    }
+}
+
+@media only screen and (max-width : 480px) {
+    .form-group {
+        width: 90%;
+        label {
+            font-size: 14px;
+        }
+        input {
+            padding: 8px;
+        }
+        .error {
+            font-size: 14px;
+        }
+    }
+}
+
+@media only screen and (min-width : 768px) and (max-width : 1024px) {
+    .form-group {
+        width: 50%;
+    }
+}
