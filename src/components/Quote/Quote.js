@@ -113,7 +113,7 @@ class Quote extends Component {
                         handleChange={this.handleChange}
                         autoComplete="off" />
 
-                    { showAlert === false ? <Alert msg={QuoteCq.successAlert} /> : null }
+                    { showAlert ? <Alert msg={QuoteCq.successAlert} /> : null }
 
                     <Button
                         disabled={valid?.email?.error || valid?.name?.error || valid?.contact?.error}
